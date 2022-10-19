@@ -11,7 +11,7 @@ function createDeck() {
             var weight = parseInt(values[i]);
             if (values[i] == "J" || values[i] == "Q" || values[i] == "K")
                 weight = 10;
-            if (values[i] == "A")
+            if (values[i] === "A")
                 if (sum <= 21) { //making the value of the ace 1 or 11 depending on the sum of the cards
                     weight = 11;
                 }
